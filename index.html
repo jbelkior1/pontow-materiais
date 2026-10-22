@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ponto W · materiais</title>
+<meta name="description" content="Vídeo, mapa do sistema e links do Ponto W, a franquia de recarga de carro elétrico em comércios com a GoodWe.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+<style>
+  :root {
+    --fundo: #000000;
+    --painel: #1c1c1e;
+    --linha: #2c2c30;
+    --borda: #3a3a3f;
+    --texto: #f4f2ee;
+    --dim: rgba(244, 242, 238, .72);
+    --vermelho: #e60012;
+    --vermelho-claro: #ff5560;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--fundo); color: var(--texto);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  .pagina { max-width: 880px; margin: 0 auto; padding: 24px 16px 56px; }
+  .topo { display: flex; align-items: center; gap: 12px; }
+  .raio { width: 40px; height: 40px; border-radius: 11px; background: var(--vermelho); display: grid; place-items: center; flex: none; }
+  .marca b { display: block; font-size: 14px; font-weight: 600; letter-spacing: .3em; }
+  .marca span { font-size: 13px; color: var(--dim); }
+  h1 { font-size: clamp(32px, 7vw, 52px); font-weight: 300; letter-spacing: -.035em; line-height: 1.05; margin: 36px 0 12px; text-wrap: balance; }
+  .lead { font-size: 17px; color: var(--dim); max-width: 60ch; margin: 0; }
+  h2 { font-size: 15px; font-weight: 500; color: var(--dim); margin: 44px 0 12px; }
+  .video { border-radius: 16px; overflow: hidden; background: #0b0b0d; border: 1px solid var(--linha); }
+  video { width: 100%; height: auto; display: block; aspect-ratio: 16 / 9; background: #000; }
+  .legenda { font-size: 13px; color: var(--dim); margin: 10px 2px 0; }
+  .lista { display: grid; gap: 10px; }
+  .item {
+    display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 14px;
+    background: var(--painel); border: 1px solid var(--linha); text-decoration: none;
+  }
+  .item:hover { border-color: var(--borda); }
+  .item:focus-visible { outline: 3px solid var(--texto); outline-offset: 2px; }
+  .ico { width: 40px; height: 40px; border-radius: 10px; background: #26262a; display: grid; place-items: center; flex: none; color: var(--vermelho-claro); }
+  .item-texto { flex: 1 1 auto; min-width: 0; }
+  .item-texto b { display: block; font-size: 16px; font-weight: 500; }
+  .item-texto span { font-size: 13px; color: var(--dim); }
+  .seta { color: var(--dim); flex: none; }
+  .acoes { display: flex; gap: 8px; flex: none; }
+  .botao { font-size: 13px; font-weight: 500; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--borda); text-decoration: none; white-space: nowrap; }
+  .botao.principal { background: var(--vermelho); border-color: transparent; color: #fff; }
+  .nota { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--linha); font-size: 13px; color: var(--dim); }
+  @media (max-width: 560px) {
+    .doc { flex-wrap: wrap; }
+    .doc .acoes { width: 100%; padding-left: 56px; }
+  }
+</style>
+</head>
+<body>
+<main class="pagina">
+  <header class="topo">
+    <span class="raio" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+    </span>
+    <span class="marca"><b>GOODWE</b><span>Ponto W · FIAP</span></span>
+  </header>
+
+  <h1>Uma vaga do estacionamento vira ponto de recarga</h1>
+  <p class="lead">
+    O Ponto W é uma franquia de recarga de carro elétrico em comércios. O motorista carrega por 1 a 2 horas
+    e, nesse tempo, compra na loja. Aqui estão o vídeo do fluxo, o mapa do sistema e o sistema funcionando.
+  </p>
+
+  <h2>Vídeo · o fluxo completo em 80 segundos</h2>
+  <div class="video">
+    <video controls preload="metadata" playsinline poster="video/capa.jpg">
+      <source src="video/pontow-fluxo.mp4" type="video/mp4">
+      Seu navegador não toca o vídeo. <a href="video/pontow-fluxo.mp4">Baixe o vídeo</a>.
+    </video>
+  </div>
+  <p class="legenda">Da foto do estacionamento à recarga paga com Pix. <a href="video/pontow-fluxo.mp4" download>Baixar o vídeo (MP4)</a></p>
+
+  <h2>Documentos</h2>
+  <div class="lista">
+    <div class="item doc">
+      <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
+      <span class="item-texto"><b>Mapa do sistema · resumo</b><span>13 páginas · o essencial para conhecer o Ponto W</span></span>
+      <span class="acoes"><a class="botao principal" href="docs/mapa-do-sistema-resumo.pdf">Abrir</a><a class="botao" href="docs/mapa-do-sistema-resumo.pdf" download>Baixar</a></span>
+    </div>
+    <div class="item doc">
+      <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
+      <span class="item-texto"><b>Mapa do sistema · completo</b><span>24 páginas · telas, fluxo, valores sugeridos e links</span></span>
+      <span class="acoes"><a class="botao principal" href="docs/mapa-do-sistema.pdf">Abrir</a><a class="botao" href="docs/mapa-do-sistema.pdf" download>Baixar</a></span>
+    </div>
+  </div>
+
+  <h2>O sistema funcionando</h2>
+  <div class="lista">
+    <a class="item" href="https://jbelkior1.github.io/gs_goodwe/seja-goodwe">
+      <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5V20h16v-9.5M3 10.5 5 4.5h14l2 6a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0Z"/></svg></span>
+      <span class="item-texto"><b>Seja GoodWe</b><span>A página de franquia, com a avaliação do estacionamento em 3D</span></span>
+      <span class="seta" aria-hidden="true">›</span>
+    </a>
+    <a class="item" href="https://jbelkior1.github.io/gs_goodwe/demo">
+      <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12L13 2Z"/></svg></span>
+      <span class="item-texto"><b>Central da demonstração</b><span>Totem, app do motorista, franqueado e GoodWe ao vivo</span></span>
+      <span class="seta" aria-hidden="true">›</span>
+    </a>
+    <a class="item" href="https://jbelkior1.github.io/gs_goodwe/motorista?tela=cheia">
+      <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2.5h8A1.5 1.5 0 0 1 17.5 4v16a1.5 1.5 0 0 1-1.5 1.5H8A1.5 1.5 0 0 1 6.5 20V4A1.5 1.5 0 0 1 8 2.5ZM11 18.5h2"/></svg></span>
+      <span class="item-texto"><b>App do motorista</b><span>Mapa dos pontos, recarga ao vivo e pagamento por Pix</span></span>
+      <span class="seta" aria-hidden="true">›</span>
+    </a>
+  </div>
+
+  <p class="nota">
+    Projeto FIAP com a GoodWe. Os pontos, as marcas e as recargas do sistema são de demonstração, e todos os
+    valores são sugeridos e ajustáveis.
+  </p>
+</main>
+</body>
+</html>
