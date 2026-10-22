@@ -5,7 +5,7 @@ elétrico em comércios (projeto FIAP com a GoodWe).
 
 **Link:** https://jbelkior1.github.io/pontow-materiais/
 
-O QR que leva para a página está em [`qrcode.png`](qrcode.png) (para imprimir) e [`qrcode.svg`](qrcode.svg).
+O QR que leva para a página está em [`qrcode.pdf`](qrcode.pdf) (folha A4 para imprimir), [`qrcode.png`](qrcode.png) e [`qrcode.svg`](qrcode.svg).
 
 | Arquivo | O que é |
 | --- | --- |
